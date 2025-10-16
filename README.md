@@ -1,6 +1,6 @@
 # Profile Card
 
-A simple, responsive profile card built with HTML, CSS, and vanilla JavaScript. It displays an avatar, name, bio, social links, hobbies/dislikes, and a live-updating timestamp (milliseconds since Unix epoch). Icons are provided via Font Awesome CDN.
+A simple, responsive profile card built with HTML, CSS, and vanilla JavaScript. It displays an avatar, name, bio, social links, hobbies/dislikes, and a live-updating timestamp in milliseconds. Icons are provided via Font Awesome CDN.
 
 ## Features
 
