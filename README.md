@@ -8,7 +8,6 @@ A simple, responsive profile card built with HTML, CSS, and vanilla JavaScript. 
 - Accessible structure with semantic elements and focus styles
 - Live time display that updates every second
 - Social links with external-icon support
-- No build step or framework required
 
 ## Tech Stack
 
@@ -26,14 +25,7 @@ A simple, responsive profile card built with HTML, CSS, and vanilla JavaScript. 
 
 ## Run Locally
 
-Choose one of the following options:
-
-1. Open directly in your browser
-
-- Double-click `index.html`, or
-- From Command Prompt in the project folder: `start index.html`
-
-2. Serve with a simple local server (optional)
+1. Serve with a simple local server (optional)
 
 - VS Code Live Server: Open the folder in VS Code, right‑click `index.html` → "Open with Live Server"
 - Python (Windows): `py -m http.server 5500` then open http://localhost:5500/
