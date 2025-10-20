@@ -31,8 +31,11 @@ article[data-testid="test-profile-card"] {
 
 .profile-sidebar {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  gap: 12px;
+  padding-top: 20px;
 }
 
 figure {
@@ -48,6 +51,41 @@ img[data-testid="test-user-avatar"] {
   object-fit: cover;
   border: 3px solid yellowgreen;
   box-shadow: 0 2px 8px rgba(154, 205, 50, 0.3);
+}
+
+.profile-quick-links ul {
+  list-style: none;
+  padding-top: 10px;
+  padding-right: 40px;
+  margin: 0;
+  display: flex;
+  gap: 12px;
+}
+
+.profile-quick-links a {
+  color: white;
+  font-size: 1.7rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.profile-quick-links a:hover {
+  color: yellowgreen;
+  background-color: rgba(154, 205, 50, 0.2);
+  transform: translateY(-2px);
+}
+
+.profile-quick-links a:focus {
+  outline: 3px solid yellowgreen;
+  outline-offset: 3px;
+  color: yellowgreen;
 }
 
 .profile-content {
@@ -123,6 +161,61 @@ nav[data-testid="test-user-social-links"] a:active {
 
 section {
   margin: 0;
+}
+
+/* Contact form styles */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.form-field label {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.form-field input,
+.form-field textarea {
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 1rem;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+  outline: 3px solid yellowgreen;
+  outline-offset: 2px;
+}
+
+.form-error {
+  margin: 0;
+  color: #ff6b6b;
+  font-size: 0.85rem;
+}
+
+.form-success {
+  color: yellowgreen;
+  font-size: 0.95rem;
+}
+
+.btn-primary {
+  background-color: rgba(154, 205, 50, 0.15);
+  color: yellowgreen;
+  border: 1px solid rgba(154, 205, 50, 0.6);
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: rgba(154, 205, 50, 0.25);
 }
 
 section h3 {

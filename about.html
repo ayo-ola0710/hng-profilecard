@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - My Profile</title>
+    <link rel="stylesheet" href="work1.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/93d9fc9c96.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <article data-testid="test-profile-card">
+      <div class="profile-sidebar">
+        <figure>
+          <img
+            src="./profile.jpg"
+            alt=" profile picture"
+            data-testid="test-user-avatar"
+          />
+        </figure>
+        <nav class="profile-quick-links" aria-label="Quick navigation">
+          <ul>
+            <li>
+              <a href="index.html" aria-label="Home" title="Home">
+                <i class="fa-solid fa-house" aria-hidden="true"></i>
+              </a>
+            </li>
+            <li>
+              <a href="contact.html" aria-label="Contact" title="Contact">
+                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="profile-content">
+        <main data-testid="test-about-page">
+          <header>
+            <h2>About Me</h2>
+          </header>
+
+          <section aria-labelledby="about-bio">
+            <h3 id="about-bio">Bio</h3>
+            <p data-testid="test-about-bio">
+              I’m a frontend developer focused on building clean, accessible,
+              and responsive user interfaces. I enjoy working with modern web
+              technologies and continuously improving my craft through
+              real-world projects and learning.
+            </p>
+          </section>
+
+          <section aria-labelledby="about-goals">
+            <h3 id="about-goals">Goals in this program</h3>
+            <p data-testid="test-about-goals">
+              Grow into a well-rounded UI engineer, strengthen JavaScript
+              fundamentals, build production-quality projects, and practice
+              testing and accessibility with consistency.
+            </p>
+          </section>
+
+          <section aria-labelledby="about-confidence">
+            <h3 id="about-confidence">Areas of low confidence</h3>
+            <p data-testid="test-about-confidence">
+              Speaking confidently during interviews and timeboxing complex
+              tasks. Also fear of element of suprise in Hng tasks.
+            </p>
+          </section>
+
+          <section aria-labelledby="about-future">
+            <h3 id="about-future">Note to future self</h3>
+            <p data-testid="test-about-future-note">
+              Keep Building. Small, consistent progress compounds. Prioritize
+              clarity, empathy, and maintainability in every interface you
+              build.
+            </p>
+          </section>
+
+          <section aria-labelledby="about-extra">
+            <h3 id="about-extra">Extra thoughts</h3>
+            <p data-testid="test-about-extra">
+              Community and collaboration accelerate learning. Share what you
+              know, ask questions, and learn quickly.
+            </p>
+          </section>
+        </main>
+      </div>
+    </article>
+
+    <script src="./work.js"></script>
+  </body>
+</html>
