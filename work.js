@@ -20,7 +20,15 @@ function updateCurrentTime() {
 updateCurrentTime();
 setInterval(updateCurrentTime, 1000);
 
-form.addEventListener("submit", function (e) {
+form.addEventListener("click", validateForm);
+form.addEventListener("keydown", function (e) {
+  if (e.key === "Enter") {
+    e.preventDefault();
+    validateForm(e);
+  }
+});
+
+function validateForm(e) {
   e.preventDefault();
 
   success.hidden = true;
@@ -69,4 +77,4 @@ form.addEventListener("submit", function (e) {
     success.hidden = false;
     success.textContent = "Message sent successfully!";
   }
-});
+}
